@@ -468,10 +468,11 @@ const buildIndex = (posts) => {
     const title = post.snapshot.name;
     const labels = post.snapshot.labels.join(" ");
     const text = post.snapshot.description;
-    const postText = `${title} ${labels} ${text}`;
+    const postType = post.snapshot.post_type;
+    const authorId = post.author_id;
+    const postText = `${authorId} ${postType} ${title} ${labels} ${text}`;
     index = fillDictionaryWith(index, postText, post.id);
   });
-
   return index;
 };
 
