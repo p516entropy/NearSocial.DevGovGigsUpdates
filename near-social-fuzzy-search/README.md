@@ -1,3 +1,5 @@
+![fuzzy-search-demo](https://user-images.githubusercontent.com/18199461/222934334-934e9f2c-09c5-4f25-a59a-1259954db801.gif)
+
 NEAR Fuzzy Search widget
 ====
 
