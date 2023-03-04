@@ -16,5 +16,5 @@ The post will be displayed as it looked after that edit
 To compare two timestamps, select the first timestamp from the dropdown menu, then hold down the Shift key and select the second timestamp
 A diff window will appear, showing what parts of the post have changed between the two selected timestamps
 
-##License
+## License
 This widget is licensed under the MIT License.
