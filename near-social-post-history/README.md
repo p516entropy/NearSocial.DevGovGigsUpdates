@@ -1,3 +1,5 @@
+![historywidget](https://user-images.githubusercontent.com/12901349/222880515-ec4c0ed7-8bbc-4900-b788-853262262961.gif)
+
 # DevGigsBoard Editing History Widget
 This widget allows users to view the editing history of posts on DevGigsBoard, a platform for developers to share their work and connect with potential clients. The editing history is stored on a smart contract and can be accessed through this widget.
 
