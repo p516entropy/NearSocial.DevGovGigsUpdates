@@ -189,7 +189,7 @@ const header = (
                 src={`markeljan.near/widget/HistoryWidget`}
                 props={{
                   post: post,
-                  timestamp: currentTimestamp,
+                  timestamp: currentTimestamp
                 }}
               />
             </div>

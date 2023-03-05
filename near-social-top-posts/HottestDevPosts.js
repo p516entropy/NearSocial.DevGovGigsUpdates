@@ -118,18 +118,26 @@ return (
         </ul>
       </div>
     </div>
-    {state.hottestsPosts.map((post) => {
-      return (
-        <div key={post.id} style={{ "min-height": "10em" }}>
-          <Widget
-            src={`p516entropy.near/widget/SearchResultPost`}
-            props={{
-              post: post,
-            }}
-            key={key}
-          />
-        </div>
-      );
-    })}
+    {!!state.hottestsPosts.length ? (
+      <div>
+        {state.hottestsPosts.map((post) => {
+          return (
+            <div key={post.id} style={{ "min-height": "10em" }}>
+              <Widget
+                src={`p516entropy.near/widget/SearchResultPost`}
+                props={{
+                  post: post,
+                }}
+                key={key}
+              />
+            </div>
+          );
+        })}
+      </div>
+    ) : (
+      <div class="py-2" style={{ "min-height": "10em" }}>
+        Not posts created for given period
+      </div>
+    )}
   </div>
 );
