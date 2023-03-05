@@ -5,7 +5,7 @@ NEAR Fuzzy Search widget
 
 ## Overview
 
-This widget implements a fuzzy matching algorithm that can handle typos, making it easier for users to find relevant posts quickly.
+The widget implements a fuzzy matching algorithm that can handle typos, making it easier for users to find relevant posts quickly.
 
 
 ## Features
@@ -24,4 +24,4 @@ Go to https://near.social/#/p516entropy.near/widget/PostsFuzzySearch and type in
 - Example: `code eterium hakk on hakaton about zk`
 
 ## License
-This widget is licensed under the MIT License.
+The widget is licensed under the MIT License.

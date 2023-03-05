@@ -17,4 +17,4 @@ The following features have been implemented in the widget:
 Go to https://near.social/#/p516entropy.near/widget/HottestDevPosts and check what near dev community is up to.
 
 ## License
-This widget is licensed under the MIT License.
+The widget is licensed under the MIT License.
