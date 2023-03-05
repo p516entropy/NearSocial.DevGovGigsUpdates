@@ -189,7 +189,7 @@ const header = (
                 src={`markeljan.near/widget/HistoryWidget`}
                 props={{
                   post: post,
-                  timestamp: currentTimestamp
+                  timestamp: currentTimestamp,
                 }}
               />
             </div>
@@ -464,7 +464,7 @@ const timestampElement = (_snapshot) => {
   return (
     <a
       class="text-muted"
-      href={markeljanHref("testpostmark", {
+      href={markeljanHref("PostWithHistory", {
         id: postId,
         timestamp: _snapshot.timestamp,
         compareTimestamp: null,
