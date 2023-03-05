@@ -12,10 +12,7 @@ const daysBetweenTimestamps = (timestamp1, timestamp2) => {
 };
 
 const calculateBidPower = (deposit) => {
-  const daysBetween = daysBetweenTimestamps(
-    deposit.timestamp,
-    deposit.expire_timestamp
-  );
+  const daysBetween = daysBetweenTimestamps(deposit.timestamp, deposit.expire_timestamp);
   return deposit.amount / daysBetween;
 };
 
@@ -27,18 +24,14 @@ const findPromotedPosts = (posts, deposits) => {
     .filter((deposit) => deposit.expire_timestamp > Date.now())
     .forEach((deposit) => {
       const postId = deposit.post_id;
-      const currentBidPower = (
-        postsDepositsDictionary[postId] || { bidPower: 0 }
-      ).bidPower;
+      const currentBidPower = (postsDepositsDictionary[postId] || { bidPower: 0 }).bidPower;
 
       postsDepositsDictionary[postId] = {
         bidPower: currentBidPower + calculateBidPower(deposit),
       };
     });
 
-  const promotedPosts = posts.filter((post) =>
-    postsDepositsDictionary.hasOwnProperty(post.id)
-  );
+  const promotedPosts = posts.filter((post) => postsDepositsDictionary.hasOwnProperty(post.id));
 
   promotedPosts.sort((a, b) => {
     const postABidPower = postsDepositsDictionary[a.id].bidPower;
@@ -78,11 +71,14 @@ if (!state.promotedPosts.length) {
 
 return (
   <div>
-    <div class="row">
+    <div class="d-flex justify-content-between align-items-end">
       <div class="fs-5">
         <i class="bi-cash-coin"></i>
         <span>Promoted Posts</span>
       </div>
+      <a href="https://near.social/#/markeljan.near/widget/PromotePost" target="_blank">
+        Promote your post
+      </a>
     </div>
     {!!state.shownPromotedPosts.length ? (
       <div>
