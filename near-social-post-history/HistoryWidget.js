@@ -2,6 +2,7 @@
 ---props---
 props.post: {};
 props.id: number;
+props.newTab: boolean;
 props.timestamp: number;
 props.referral: any;
 */
@@ -45,7 +46,7 @@ const history = (
     <a
       class="card-link"
       role="button"
-      title="Edit post"
+      title="Post History"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       type="button"
@@ -80,12 +81,13 @@ const history = (
             >
               <a
                 class="dropdown-item"
-                href={historyHref("testpostmark", {
+                href={historyHref("PostWithHistory", {
                   id: postId,
                   timestamp: item.timestamp,
                   compareTimestamp: null,
                   referral,
                 })}
+                target={props.newTab ? "_blank" : undefined}
               >
                 {readableDate(item.timestamp / 1000000)}
 
