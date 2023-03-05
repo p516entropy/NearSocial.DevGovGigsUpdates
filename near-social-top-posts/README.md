@@ -1,3 +1,5 @@
+![hot-posts-demo](https://user-images.githubusercontent.com/18199461/222934932-a77b0143-acdc-4b4b-8c83-8094f389c955.gif)
+
 NEAR Top Posts Widget
 ====
 
@@ -7,8 +9,8 @@ Currently, the DevGovGigs only shows posts in chronological order, which can mak
 ## Features
 The following features have been implemented in the widget:
 
-- heuristics: The widget can determine which posts are the hottest by various factors, such as the number of replies and likes, as well as the age of the post and the age of each reply it has.
-- filters: Users can filter hot posts by the last 24 hours, week, and month. This allows users to see the most active posts within a specific time frame.
+- Heuristics: The widget can determine which posts are the hottest by various factors, such as the number of replies and likes, as well as the age of the post and the age of each reply it has.
+- Filters: Users can filter hot posts by the last 24 hours, week, and month. This allows users to see the most active posts within a specific time frame.
 - User-Friendly Interface :)
 
 ## Getting Started
