@@ -9,7 +9,7 @@ User able to promote posts. User can set intervals for each bid to spread the fu
 ## Features
 The following features have been implemented:
 
-- Top three posts with highest bids widget can be placed as a small ui carousel
+- Top three posts with the highest bids widget can be placed as a small ui carousel
 - Separate widget to Show All Promoted
 - User able to bid on their chosen posts to promote. Users can set intervals for each bid to spread funds evenly
 - User able to see required daily bid for the post to be in top 3
